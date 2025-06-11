@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sudoku Game</title>
+  <link rel="stylesheet" href="css/Sudoku.css" />
+  <script src="js/Sudoku.js"></script>
+</head>
+<style>
+    body{
+        background-color: black;
+        font-family: Arial, sans-serif;
+        color: #fff;
+    }
+</style>
+<body>
+
+
+  <div class="title-container">
+    <img src="img/Sudoku.jpg" alt="Sudoku Icon" class="game-icon" />
+    <div class="title-text">
+      <h1>Sudoku Master</h1>
+      <div class="subtitle">Sharpen Your Mind, one grid at a time!</div>
+    </div>
+  </div>
+
+
+  <div class="container text-center mt-4">
+    <h1>🧩Sudoku</h1>
+    <div id="sudokuBoard" class="sudoku-container"></div>
+  
+
+
+  <div class="controls">
+    <button class="check-solution" onclick="checkSolution()">Check Solution</button>
+    <button class="new-game" onclick="generatePuzzle()">New Puzzle</button>
+    <button class="reset-btn" onclick="resetBoard()">Reset Board</button>
+    </div>
+
+    <div id="scorecard">
+    <p id="stats">Puzzles solved: 0</p>
+    <button class="reset-stats" onclick="resetStats()">Reset Stats</button>
+  </div>
+  </div>
+
+  
+  
+</body>
+</html>
